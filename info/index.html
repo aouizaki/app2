@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: black;
+            color: white;
+            list-style: none;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            text-align: center;
+        }
+
+        .info-list {
+            list-style-type: none;
+            text-align: left;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+        }
+
+        small {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .info-list {
+                text-align: center;
+            }
+        }
+        span{
+            color: aqua;
+        }
+
+
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+    border: transparent;
+    padding: 5px 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="color: rgb(252, 103, 103);">App Info</h1>
+        </div>
+            <li>Programmeur d'application:<span>Aouidat Zakaria</span></li>
+            <li>version : <span>1.0.0</span></li>
+            <li>Durée : <span>7 heures</span></li>
+            <li>Dédié à : <span>oute la famille Aouidat</span></li>
+            <small> <span>Merci d'utiliser cette application.</span></small>
+
+            <div class="navbar">
+                <a href="/index.html" class="nav-link">Calc</a>
+                <a href="/Quiz/index.html" class="nav-link">Quiz</a>
+                <a href="#" class="nav-link">Infos</a>
+            </div>
+    
+        </div>
+</body>
+</html>
